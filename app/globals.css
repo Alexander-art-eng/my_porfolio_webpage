@@ -5,3 +5,12 @@
 *{
   font-family: Outfit;
 }
+
+/* for the repetative style */
+.h2-style {
+  @apply text-center text-5xl font-Ovo;
+}
+
+.h4-style{
+  @apply text-center mb-2 text-lg font-Ovo;
+}

@@ -26,8 +26,7 @@ const Footer = ({ darkMode }) => {
 
         <ul className="flex items-center gap-10 justify-center mt-4 sm:mt-0">
           <li><a target="_blank" href="https://github.com/Alexander-art-eng">GitHub</a></li>
-          <li><a target="_blank" href="https://github.com/Alexander-art-eng">Linkedin</a></li>
-          <li><a target="_blank" href="https://github.com/Alexander-art-eng">facebook</a></li>
+          <li><a target="_blank" href="https://www.linkedin.com/in/alexander-tesfay-habte">Linkedin</a></li>
         </ul>
       </div>
     </footer>

@@ -1,45 +1,33 @@
-import { assets, workData } from "@/assets/assets"
-import Image from "next/image"
-import { motion } from "motion/react"
+import { assets, workData } from "@/assets/assets";
+import Image from "next/image";
+import { motion } from "motion/react";
 
 const MyProjects = ({ darkMode }) => {
   return (
-    <motion.div 
-      id="projects" 
-      className="w-full px-[12%] py-10 scroll-mt-20"
-      initial={{opacity: 0}}
-      whileInView={{opacity: 1}}
-      transition={{duration: 1}}  
-    >
-              {/* repetative style */}
-      <motion.h4 
-        className="text-center mb-2 text-lg font-Ovo"
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{delay: 0.3, duration: 0.5}}
-      >
-        Projects
-      </motion.h4>
-      <motion.h2 
-        className="text-center text-5xl font-Ovo"
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{delay: 0.5, duration: 0.5}}
-      >
-        My latest Work
-      </motion.h2>
-      <motion.p
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
-        initial={{opacity: 0}}
-        whileInView={{opacity: 1}}
-        transition={{delay: 0.7, duration: 0.5}}
-      >
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure quo ex
-        sit accusamus ratione, natus aperiam ab praesentium exercitationem
-        commodi blanditiis
-      </motion.p>
+    <div id="projects" className="w-full px-[12%] py-10 scroll-mt-20">
+      <h4 className="h4-style">Projects</h4>
+      <h2 className="h2-style">My latest Work</h2>
+      <p className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo">
+        In my latest project, I developed a comprehensive automated testing
+        suite using Cypress and Playwright, ensuring seamless UI interactions,
+        responsive design, and cross-browser compatibility. Additionally, I
+        implemented API validation workflows in Postman, leveraging automated
+        scripts, environment variables, and collection runners to streamline
+        testing across multiple endpoints. By integrating custom test commands,
+        intercepts, and automation frameworks, I enhanced efficiency, reduced
+        manual effort, and ensured software reliability. This project showcases
+        my ability to bridge QA and development, optimizing both front-end
+        performance and backend API interactions. Check out my{" "}
+        <a
+          href="https://github.com/Alexander-art-eng"
+          className="text-xl font-bold"
+        >
+          GitHub
+        </a>{" "}
+        for more details!
+      </p>
 
-      <motion.div 
+      {/* <motion.div 
         className="grid grid-cols-auto my-10 gap-5 dark:text-black"
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
@@ -70,9 +58,9 @@ const MyProjects = ({ darkMode }) => {
 
           </motion.div>
         ))}
-      </motion.div>
+      </motion.div> */}
 
-      <motion.a 
+      {/* <motion.a 
         href="" 
         className="w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px] border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-lightHover duration-500 dark:text-white dark:border-white dark:hover:bg-darkHover"
         initial={{opacity: 0}}
@@ -85,9 +73,9 @@ const MyProjects = ({ darkMode }) => {
           alt="right arrow"
           className="w-4"
         />
-      </motion.a>
-    </motion.div>
-  )
-}
+      </motion.a> */}
+    </div>
+  );
+};
 
-export default MyProjects
+export default MyProjects;

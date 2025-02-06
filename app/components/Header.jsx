@@ -44,7 +44,7 @@ const Header = () => {
       >
         I'm from <strong>Eritrea,</strong> very passionate about developing a
         solutions by leveraging programms and applications to make our life
-        easier
+        easier and friendly
       </motion.p>
 
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
