@@ -5,12 +5,12 @@ const Footer = ({ darkMode }) => {
   return (
     <footer className="mt-20">
       <div className="text-center">
-        <Image 
+        {/* <Image 
           src={darkMode ? assets.logo_dark : assets.logo}
           alt="footer logo"
           className="w-36 mx-auto mb-2"
-        />
-
+        /> */}
+        <span className={`text-2xl border rounded-md p-1 ${darkMode ? 'text-white border-gray-300' : 'text-black border-red-600'}`}>ALEXANDER.</span>
         <div className="w-max flex items-center gap-2 mx-auto">
           <Image 
             src={darkMode ? assets.mail_icon_dark : assets.mail_icon}

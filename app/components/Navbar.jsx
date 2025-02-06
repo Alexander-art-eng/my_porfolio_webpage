@@ -38,11 +38,12 @@ const Navbar = ({ darkMode, isDarkMode }) => {
 
       <nav className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${scroll ? 'bg-white bg-opacity-50 backdrop-blur-lg shadow-sm' : ''} dark:bg-darkTheme dark:shadow-white/20`}>
         <a href="#top">
-            <Image 
+            {/* <Image 
               src={darkMode ? assets.logo_dark : assets.logo}
               alt="logo pic"
               className="w-28 cursor-pointer mr-14"
-            />
+            /> */}
+            <span className={`text-2xl border border-gray-300 rounded-md p-1 ${darkMode ? 'text-white' : 'text-black'}`}>ALEXANDER.</span>
         </a>
 
         <ul className={`hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 ${scroll ? '' : 'bg-white shadow-sm bg-opacity-50 dark:border dark:border-white/50 dark:bg-transparent'}`}>

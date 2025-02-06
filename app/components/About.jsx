@@ -29,7 +29,7 @@ const About = ({ darkMode }) => {
       </motion.h2>
 
       <motion.div
-        className="flex w-full flex-col lg:flex-row items-center gap-20 my-20"
+        className="flex w-full flex-col lg:flex-row items-start gap-20 my-20"
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
@@ -41,7 +41,7 @@ const About = ({ darkMode }) => {
           transition={{ duration: 0.6 }}
         >
           <Image
-            src={assets.profile_img}
+            src={assets.computer}
             alt="profile pic"
             className="w-full rounded-[4rem]"
           />
